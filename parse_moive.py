@@ -71,9 +71,10 @@ json_data = {
 	"movie_cast":[dict(name=nm) for nm in cast_list]
 }
 
-print json.dumps(json_data)     
 	
-
+f = open('movie_json','w')
+f.write(json.dumps(json_data))
+f.close()
 
 
 
